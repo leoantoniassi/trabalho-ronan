@@ -1,47 +1,139 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+/* globals */
 * {
   box-sizing: border-box;
   font-family: "roboto";
+  padding: 0;
+  margin: 0;
 }
+
+/* azul
+--background-color: #112d4e;
+--foreground-color: #24456d;
+  --common-text-color: #fff;
+*/
+
+/* cinza
+--background-color: #222831;
+--foreground-color: #393E46;
+  --common-text-color: #fff;
+*/
+
+/* claro
+--background-color: #DBE2EF;
+--foreground-color: #F9F7F7;
+  --common-text-color: #000;
+*/
+
+/* font logo  */
+@font-face {
+  font-family: "rick";
+  src: url("../font/get_schwifty.ttf") format("truetype");
+}
+
+:root {
+  --background-color: #222831;
+  --foreground-color: #393e46;
+  --common-text-color: #fff;
+}
+
 body {
-  background-color: #e0e0e0;
-  color: black;
+  background-color: var(--background-color);
+  color: var(--common-text-color);
+}
+/* nav */
+.navbar {
+  background-color: var(--background-color);
+  position: fixed;
+  width: 100%;
+  padding: 15px 20px;
+  -webkit-box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.23);
+  -moz-box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.23);
+  box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.23);
+  z-index: 10;
 }
 
-.card {
-  background-color: #696969;
-  border-radius: 8%;
-  padding: 20px;
-  box-shadow: 0 9px 16px rgba(0, 0, 0, 0.2);
-  transition: 0.3s ease, box-shadow 0.3s ease;
-}
-.card:hover {
-  transform: scale(1.1, 1.1);
+.navlink {
+  padding: 5px 30px;
+  text-decoration: none;
+  color: var(--common-text-color);
+  font-weight: bold;
 }
 
+.navlink:hover {
+  background-color: var(--common-text-color);
+  color: #1a1a1a;
+  border-radius: 15px;
+}
+
+.mainsection {
+  padding-top: 50px;
+}
+
+/* header */
+
+.header {
+  background-color: #294799;
+  padding-top: 10px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+.logo {
+  font-family: rick;
+  font-size: calc(38px + 10vw);
+  color: #8fc73e;
+}
+.rickandmorty {
+  z-index: 9;
+}
+.portal {
+  width: 50%;
+  position: absolute;
+  margin-left: 24%;
+}
+.rotate {
+  animation: rotation 8s infinite linear;
+}
+
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+}
+
+/* Container */
 .container {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  color: #82ad3b;
-  padding: 20px;
+  margin-top: 60px;
   gap: 20px;
 }
-.rickimg {
+/* Cards */
+.card {
+  cursor: pointer;
+  background-color: var(--foreground-color);
   border-radius: 8%;
+  box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.23);
+  padding: 20px;
+  transition: 0.3s ease, box-shadow 0.3s ease;
+  text-align: center;
 }
 
 .name {
   text-align: center;
-}
-.link-text {
-  color: #82ad3b;
   text-decoration: none;
 }
-.navbar {
-  background-color: #696969;
-  position: fixed;
-  top: 0;
-  width: 100%;
-  padding: 15px 20px;
+
+.card:hover {
+  transform: scale(1.05, 1.05);
+}
+
+.charimg {
+  border-radius: 8%;
 }
