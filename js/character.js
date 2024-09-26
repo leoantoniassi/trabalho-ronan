@@ -6,3 +6,9 @@ const fetchData = async (id) => {
     console.log(err);
   }
 };
+
+const url = window.location.href;
+
+const params = new URLSearchParams(window.location.search);
+
+const nome = params.get("id");
