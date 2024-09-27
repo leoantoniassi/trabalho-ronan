@@ -43,6 +43,8 @@ body {
 }
 /* nav */
 .navbar {
+  display: flex;
+  justify-content: space-between;
   background-color: var(--background-color);
   position: fixed;
   width: 100%;

@@ -18,14 +18,15 @@ const HtmlStatus = document.querySelector(".status");
 const HtmlSpecie = document.querySelector(".specie");
 const HtmlGender = document.querySelector(".gender");
 const HtmlOrigin = document.querySelector(".origem");
+const HtmlEpisodes = document.querySelector(".episodes");
 
-console.log("Elemento HTML:", HtmlNome);
+
 
 const updateHtml = async () => {
   const data = await fetchData(id);
-  console.log("Dados recebidos:", data);
 
-  const episodes = data.episodes;
+
+  const episodes = data.episode;
   console.log(episodes);
 
   if (data) {
@@ -34,6 +35,11 @@ const updateHtml = async () => {
     HtmlSpecie.textContent = data.species;
     HtmlGender.textContent = data.gender == "Male" ? "Homem" : "Mulher";
     HtmlOrigin.textContent = data.origin.name;
+    HtmlEpisodes.innerHTML = "";
+
+    episodes.forEach((element) => {
+      HtmlEpisodes.innerHTML += `<span> ${element} </span>`;
+    });
   }
 };
 
