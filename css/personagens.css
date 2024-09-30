@@ -44,3 +44,7 @@
 .dead {
   background-color: red;
 }
+.foto-perfil{
+  width: 150px;
+  border-radius: 50%;
+}
