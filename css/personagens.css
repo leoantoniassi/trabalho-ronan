@@ -1,33 +1,46 @@
 .nome {
-  font-family: Roboto;
+  font-size: x-large;
+  font-weight: bold;
 }
+
 .status {
-  font-family: Roboto;
+  color: aliceblue;
+  padding: 2px;
+  margin-left: 5px;
+  border-radius: 10px;
 }
-/* -----------------------*/ 
+/* -----------------------*/
 
 .profile-header {
-        display: flex;
-        align-items: flex-start; /* Alinha os itens ao topo */
-        border-bottom: 2px solid #ddd;
-        padding-bottom: 20px;
-        margin-top: 20px;
-    }
-    .profile-header img {
-        border-radius: 50%;
-        width: 120px;
-        height: 120px;
-        margin-right: 20px;
-        margin-top: 80px; /* Mantém a margem superior na imagem */
-    }
-    .profile-header div {
-        margin-top: 80px; /* Alinha os textos à altura da imagem */
-    }
-.profile-header h1 {
-  margin: 0;
-  font-size: 28px;
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  padding: 100px 20px;
+  background: url("../img//bg.webp") fixed no-repeat;
+  background-size: cover;
 }
-.profile-header p {
-  margin: 5px 0;
-  color: #666;
+
+.charimg {
+  border-radius: 50%;
+}
+.info {
+  margin-left: 40px;
+}
+.card {
+  display: flex;
+  flex-direction: row;
+  background-color: rgb(88, 84, 88);
+  color: black;
+  align-items: center;
+  justify-content: space-around;
+  padding: 30px;
+  border-radius: 30px;
+}
+/* status */
+.alive {
+  background-color: green;
+}
+.dead {
+  background-color: red;
 }

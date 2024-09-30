@@ -96,7 +96,7 @@ body {
   margin-left: 24%;
 }
 .rotate {
-  animation: rotation 8s infinite linear;
+  animation: rotation 7s infinite linear;
 }
 
 @keyframes rotation {
