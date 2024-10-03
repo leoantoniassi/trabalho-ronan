@@ -44,6 +44,7 @@ body {
 /* nav */
 .navbar {
   display: flex;
+  
   justify-content: space-between;
   background-color: var(--background-color);
   position: fixed;
@@ -138,4 +139,7 @@ body {
 
 .charimg {
   border-radius: 8%;
+}
+.sobrenos{
+  padding: 5px 30px;
 }

@@ -20,6 +20,8 @@ const HtmlGender = document.querySelector(".gender");
 const HtmlOrigin = document.querySelector(".origem");
 const HtmlEpisodes = document.querySelector(".episodes");
 const HtmlPick = document.querySelector(".charimg");
+const HtmlEpisodeEst = document.querySelector(".episodeEst");
+const HtmlQtdEpisodes = document.querySelector(".qtdEpisodes");
 
 const updateHtml = async () => {
   const data = await fetchData(id);
@@ -43,13 +45,13 @@ const updateHtml = async () => {
     HtmlGender.textContent = data.gender == "Male" ? "Homem" : "Mulher";
     HtmlOrigin.textContent +=
       data.origin.name == "unknown" ? "disconhecido" : data.origin.name;
-    HtmlEpisodes.innerHTML = "";
+    
+    HtmlEpisodeEst.textContent = episodes[0].split("/").pop()
+    
 
-    episodes.forEach((element) => {
-      HtmlEpisodes.innerHTML += `<span>Episodeo: ${element
-        .split("/")
-        .pop()} </span>`;
-    });
+    HtmlQtdEpisodes.textContent = episodes.length
+
+
   }
 };
 
