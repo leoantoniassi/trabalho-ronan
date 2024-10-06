@@ -10,7 +10,10 @@
 
 <body>
   <nav class="navbar"> <a href="index.html" class="navlink">HOME</a>
-    <div class="sobrenos"><a href="leo.html" class="navlink">Leonardo</a> <a href="gabriel.html" class="navlink">Gabriel</a>
+    <div class="sobrenos">
+      <a href="./dimensions/dimensions.html" class="navlink">Dimensions</a>
+      <a href="./roles/roles.html" class="navlink">Roles</a>
+      <a href="./criadores/criadores.html" class="navlink">Criadores</a>
     </div>
   </nav>
 
@@ -18,80 +21,64 @@
 
     <header class="header">
 
-      <img class="rotate portal" src="./img/portal.png">
-      <img class="rickandmorty" src="./img/rickandmorty.png">
+      <img class="rotate portal" src="./img/backgrounds/portal.png">
+      <img class="rickandmorty" src="./img/backgrounds/rickandmorty.png">
 
     </header>
     <main>
-
+      <h2 class="title">- Characters -</h2>
       <div class="container">
-        <div data-character-id="1" class="card">
-          <img class="charimg" src="./img/rick.jpeg" alt="character" />
+        <a data-character-id="1" class="card" href="./characters/rick.html">
+          <p class="role">Protagonist</p>
+          <img class="charimg fotoperfil" src="./img/rick.jpeg" alt="character" />
           <h2 class="name">Rick Sanchez</h2>
-        </div>
+          <p class="dimension">Earth (C-137)</p>
+        </a>
 
-        <div data-character-id="2" class="card">
+        <a data-character-id="2" class="card" href="./characters/morty.html">
+          <p class="role">Protagonist</p>
           <img class="charimg" src="./img/morty.jpeg" alt="character" />
-
           <h2 class="name">Morty Smith</h2>
+          <h2 class="dimension">Earth (C-137)</h2>
 
-        </div>
+        </a>
 
-        <div data-character-id="3" class="card">
+        <a data-character-id="3" class="card" href="./characters/summer.html">
+          <p class="role">Supporting</p>
           <img class="charimg" src="./img/summer.jpeg" alt="character" />
-
           <h2 class="name">Summer Smith</h2>
-        </div>
+          <h2 class="dimension">Earth (Replacement Dimension)</h2>
+        </a>
 
-        <div data-character-id="4" class="card">
+        <a data-character-id="4" class="card" href="./characters/beth.html">
+          <p class="role">Supporting</p>
           <img class="charimg" src="./img/beth.jpeg" alt="character" />
-
           <h2 class="name">Beth Smith</h2>
-        </div>
+          <h2 class="dimension">Earth (Replacement Dimension)</h2>
+        </a>
 
+        <a data-character-id="119" class="card" href="./characters/jerry.html">
+          <p class="role">Villain</p>
+          <img class="charimg" src="./img/jerrymyth.jpeg" alt="character" />
+          <h2 class="name">Jerry's Mytholog</h2>
+          <h2 class="dimension">Nuptia 4</h2>
+        </a>
 
-        <div data-character-id="5" class="card">
-          <img class="charimg" src="./img/jerry.png" alt="character" />
-
-          <h2 class="name">Jerry Smith</h2>
-        </div>
-
-        <div data-character-id="43" class="card">
-          <img class="charimg" src="./img/bigmorty.jpeg" alt="character" />
-
-          <h2 class="name">Big Morty</h2>
-        </div>
-
-        <div data-character-id="44" class="card">
-          <img class="charimg" src="./img/bodyguardmorty.jpeg" alt="character" />
-
-          <h2 class="name">Body Guard Morty</h2>
-        </div>
-
-        <div data-character-id="47" class="card">
-          <img class="charimg" src="./img/birdperson.png" alt="character" />
-          <h2 class="name">Birdperson</h2>
-        </div>
-
-        <div data-character-id="119" class="card">
-          <img class="charimg" src="./img/evilrick.jpeg" alt="character" />
-          <h2 class="name">Evil Rick</h2>
-        </div>
-
-        <div data-character-id="180" class="card">
-          <img class="charimg" src="./img/jessica.jpeg" alt="character" />
-          <h2 class="name">Jessica</h2>
-        </div>
+        <a data-character-id="119" class="card" href="./characters/bethm.html">
+          <p class="role">Villain</p>
+          <img class="charimg" src="./img/bethmyth.jpeg" alt="character" />
+          <h2 class="name">Mythological Creature</h2>
+          <h2 class="dimension">Nuptia 4</h2>
+        </a>
 
       </div>
   </div>
+  
   </main>
   <footer>
+    
   </footer>
   </div>
-
-  <span class="logo">Gabriel e Leo</span>
-
 </body>
 
 <script src="./js/script.js"></script>

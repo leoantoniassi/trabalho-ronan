@@ -7,24 +7,6 @@
   margin: 0;
 }
 
-/* azul
---background-color: #112d4e;
---foreground-color: #24456d;
-  --common-text-color: #fff;
-*/
-
-/* cinza
---background-color: #222831;
---foreground-color: #393E46;
-  --common-text-color: #fff;
-*/
-
-/* claro
---background-color: #DBE2EF;
---foreground-color: #F9F7F7;
-  --common-text-color: #000;
-*/
-
 /* font logo  */
 @font-face {
   font-family: "rick";
@@ -35,6 +17,8 @@
   --background-color: #222831;
   --foreground-color: #393e46;
   --common-text-color: #fff;
+  --border-color: #1a1a1a;
+  --logo-color: #8fc73e;
 }
 
 body {
@@ -49,14 +33,12 @@ body {
   position: fixed;
   width: 100%;
   padding: 15px 20px;
-  -webkit-box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.23);
-  -moz-box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.23);
-  box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.23);
+  border-bottom: var(--border-color) 2px solid;
   z-index: 10;
 }
 
 .navlink {
-  padding: 5px 30px;
+  padding: 5px 20px;
   text-decoration: none;
   color: var(--common-text-color);
   font-weight: bold;
@@ -64,12 +46,18 @@ body {
 
 .navlink:hover {
   background-color: var(--common-text-color);
-  color: #1a1a1a;
+  color: var(--border-color);
   border-radius: 15px;
 }
 
 .mainsection {
   padding-top: 50px;
+}
+
+.line {
+  margin: 30px 0px;
+  width: 100%;
+  border: #1a1a1a 2px solid;
 }
 
 /* header */
@@ -82,19 +70,17 @@ body {
   flex-direction: column;
   text-align: center;
 }
-.logo {
-  font-family: rick;
-  font-size: calc(38px + 10vw);
-  color: #8fc73e;
-}
+
 .rickandmorty {
   z-index: 9;
 }
+
 .portal {
   width: 50%;
   position: absolute;
-  margin-left: 24%;
+  margin-left: 25%;
 }
+
 .rotate {
   animation: rotation 7s infinite linear;
 }
@@ -113,29 +99,68 @@ body {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  margin-top: 60px;
   gap: 20px;
+  padding: 0px 5px 50px 5px;
 }
 /* Cards */
+
 .card {
   cursor: pointer;
   background-color: var(--foreground-color);
-  border-radius: 8%;
-  box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.23);
+  border-radius: 20px;
+  border: var(--border-color) 2px solid;
+  border-bottom: var(--border-color) 5px solid;
   padding: 20px;
   transition: 0.3s ease, box-shadow 0.3s ease;
   text-align: center;
-}
-
-.name {
-  text-align: center;
   text-decoration: none;
+  color: var(--common-text-color);
 }
 
 .card:hover {
   transform: scale(1.05, 1.05);
 }
 
+.title {
+  font-family: rick;
+  text-align: center;
+  text-shadow: 0px 4px 0px var(--border-color);
+  padding: 30px 0px 40px 0px;
+  font-size: calc(38px + 5vw);
+  color: var(--logo-color);
+}
+
+.role {
+  text-align: center;
+  font-size: 14px;
+  padding-bottom: 15px;
+  opacity: 0.5;
+}
+
+.name {
+  text-align: center;
+  text-decoration: none;
+  padding: 15px 0px 5px 0px;
+  text-shadow: 0px 2px 0px var(--border-color);
+}
+
+.dimension {
+  text-align: center;
+  font-size: 14px;
+  padding: 5px 0px;
+  opacity: 0.5;
+}
+
 .charimg {
-  border-radius: 8%;
+  border-radius: 15px;
+  border: var(--border-color) 2px solid;
+}
+
+.sobrenos {
+  padding: 5px 30px;
+}
+
+.foto-perfil {
+  width: 280px;
+  border-radius: 50%;
 }
