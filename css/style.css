@@ -28,7 +28,6 @@ body {
 /* nav */
 .navbar {
   display: flex;
-  
   justify-content: space-between;
   background-color: var(--background-color);
   position: fixed;
@@ -158,13 +157,5 @@ body {
 }
 
 .sobrenos {
-  padding: 5px 30px;
-}
-
-.foto-perfil {
-  width: 280px;
-  border-radius: 50%;
-}
-.sobrenos{
   padding: 5px 30px;
 }

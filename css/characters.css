@@ -59,6 +59,11 @@
   border: var(--border-color) 3px solid;
 }
 
+.foto-perfil {
+  width: 150px;
+  border-radius: 50%;
+}
+
 .textfooter {
   justify-content: center;
   text-align: center;
