@@ -1,0 +1,161 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+/* globals */
+* {
+  box-sizing: border-box;
+  font-family: "roboto";
+  padding: 0;
+  margin: 0;
+}
+
+/* font logo  */
+@font-face {
+  font-family: "rick";
+  src: url("../font/get_schwifty.ttf") format("truetype");
+}
+
+:root {
+  --background-color: #222831;
+  --foreground-color: #393e46;
+  --common-text-color: #fff;
+  --border-color: #1a1a1a;
+  --logo-color: #8fc73e;
+}
+
+body {
+  background-color: var(--background-color);
+  color: var(--common-text-color);
+}
+/* nav */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  background-color: var(--background-color);
+  position: fixed;
+  width: 100%;
+  padding: 15px 20px;
+  border-bottom: var(--border-color) 2px solid;
+  z-index: 10;
+}
+
+.navlink {
+  padding: 5px 20px;
+  text-decoration: none;
+  color: var(--common-text-color);
+  font-weight: bold;
+}
+
+.navlink:hover {
+  background-color: var(--common-text-color);
+  color: var(--border-color);
+  border-radius: 15px;
+}
+
+.mainsection {
+  padding-top: 50px;
+}
+
+.line {
+  margin: 30px 0px;
+  width: 100%;
+  border: #1a1a1a 2px solid;
+}
+
+/* header */
+
+.header {
+  background-color: #294799;
+  padding-top: 10px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.rickandmorty {
+  z-index: 9;
+}
+
+.portal {
+  width: 50%;
+  position: absolute;
+  margin-left: 25%;
+}
+
+.rotate {
+  animation: rotation 7s infinite linear;
+}
+
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+}
+
+/* Container */
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 0px 5px 50px 5px;
+}
+/* Cards */
+
+.card {
+  cursor: pointer;
+  background-color: var(--foreground-color);
+  border-radius: 20px;
+  border: var(--border-color) 2px solid;
+  border-bottom: var(--border-color) 5px solid;
+  padding: 20px;
+  transition: 0.3s ease, box-shadow 0.3s ease;
+  text-align: center;
+  text-decoration: none;
+  color: var(--common-text-color);
+}
+
+.card:hover {
+  transform: scale(1.05, 1.05);
+}
+
+.title {
+  font-family: rick;
+  text-align: center;
+  text-shadow: 0px 4px 0px var(--border-color);
+  padding: 30px 0px 40px 0px;
+  font-size: calc(38px + 5vw);
+  color: var(--logo-color);
+}
+
+.role {
+  text-align: center;
+  font-size: 14px;
+  padding-bottom: 15px;
+  opacity: 0.5;
+}
+
+.name {
+  text-align: center;
+  text-decoration: none;
+  padding: 15px 0px 5px 0px;
+  text-shadow: 0px 2px 0px var(--border-color);
+}
+
+.dimension {
+  text-align: center;
+  font-size: 14px;
+  padding: 5px 0px;
+  opacity: 0.5;
+}
+
+.charimg {
+  border-radius: 15px;
+  border: var(--border-color) 2px solid;
+}
+
+.sobrenos {
+  padding: 5px 30px;
+}

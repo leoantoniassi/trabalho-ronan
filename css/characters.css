@@ -1,0 +1,98 @@
+/* -----------------------*/
+
+.profile-header {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  padding: 100px 20px;
+  background: url("../img/backgrounds/charpage.png") fixed no-repeat;
+  background-size: cover;
+  border-bottom: var(--border-color) 5px solid;
+}
+
+.character-card {
+  display: flex;
+  flex-direction: row;
+  background-color: #222831ce;
+  color: aliceblue;
+  align-items: center;
+  justify-content: space-around;
+  padding: 30px;
+  border-radius: 30px;
+  border: var(--border-color) 3px solid;
+}
+
+.charimg {
+  border-radius: 100%;
+  border: var(--border-color) 3px solid;
+}
+
+.info {
+  margin-left: 40px;
+}
+
+.char {
+  margin-bottom: 8px;
+}
+
+.nome {
+  font-size: x-large;
+  font-weight: bold;
+}
+
+.status {
+  color: aliceblue;
+  padding: 0px 5px;
+  margin-left: 5px;
+  border-radius: 10px;
+}
+
+/* status */
+.alive {
+  background-color: green;
+  border: var(--border-color) 3px solid;
+}
+
+.dead {
+  background-color: red;
+  border: var(--border-color) 3px solid;
+}
+
+.foto-perfil {
+  width: 150px;
+  border-radius: 50%;
+}
+
+.textfooter {
+  justify-content: center;
+  text-align: center;
+  font-size: medium;
+  margin-top: 30px;
+}
+
+.character-title {
+  text-align: center;
+  text-shadow: 0px 4px 0px #1a1a1a;
+  padding: 30px 0px 20px 0px;
+  font-size: calc(20px + 1.5vw);
+  color: var(--common-text-color);
+}
+
+.episodes {
+  font-family: rick;
+  text-align: center;
+  text-shadow: 0px 4px 0px #1a1a1a;
+  margin-bottom: 40px;
+  font-size: calc(38px + 5vw);
+  color: var(--logo-color);
+}
+
+.allepisodes {
+  font-family: rick;
+  text-align: center;
+  text-shadow: 0px 4px 0px #1a1a1a;
+  font-size: calc(20px + 1.5vw);
+  color: var(--logo-color);
+  padding: 30px 100px 50px 100px;
+}

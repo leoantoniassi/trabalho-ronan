@@ -1,0 +1,39 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+.mainsection{
+    padding-top: 55px;
+}
+.sobrenos{
+    padding: 5px 30px;
+}
+.card {
+    display: flex;
+    flex-direction: row;
+    background-color: #222831ce;
+    color: aliceblue;
+    align-items: center;
+    justify-content: space-around;
+    padding: 30px;
+    border-radius: 30px;
+  }
+.foto-perfil{
+    width: 150px;
+    border-radius: 50%;
+}
+.profile-header {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    padding: 100px 20px;
+    background: url("../img/rick-and-morty-background-7.webp") fixed no-repeat;
+    background-size: cover;
+  }
+  .alive{
+background-color: green;
+  }
+  .dead{
+    background-color: red;
+  }
+  .status{
+    border-radius: 30%;
+  }
